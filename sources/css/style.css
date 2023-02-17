@@ -1,0 +1,147 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+    background-color: black;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+
+canvas
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    color: rgb(255, 255, 255);
+    cursor: default;
+    font-family: 'press2start';
+    font-size: 10px;
+    letter-spacing: 1px;
+    /* padding: 10px; */
+}
+
+.hud
+{
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: 1; */
+
+    color: rgb(255, 255, 255);
+    cursor: default;
+    font-family: 'press2start';
+    font-size: 10px;
+    letter-spacing: 1px;
+
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+}
+
+.stats-display
+{
+    position: absolute;
+    top: 0;
+    left: 20%;
+    background-color: aqua;
+    width: 100px;
+    height: 20px;
+    padding: 16px;
+}
+
+.camera-stats-display
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: aqua;
+    width: 140px;
+    height: 40px;
+    padding: 16px; 
+}
+
+.respawn-button
+{
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    /* background-color: aqua; */
+    padding: 10px;    
+}
+
+.camera-controls-display
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column; 
+    bottom: 4%;
+    right: 1%;
+    /* background-color: aqua; */
+    padding: 10px;
+}
+
+.move-controls-display
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column; 
+    bottom: 4%;
+    left: 1%;
+    /* background-color: aqua; */
+    padding: 10px;
+}
+
+.placeholder
+{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row; 
+    padding: 12px;
+    z-index: 3; 
+}
+
+.key-display
+{
+    /* position: absolute; */
+    padding: 10px;
+    border: rgb(255, 255, 255) 2px solid;
+    border-radius: 8px;
+    z-index: 3;        
+}
+
+.instruction
+{
+    /* position: absolute; */
+    padding: 10px;
+    z-index: 3;       
+}
+
+
+
+@media (max-device-width: 1200px)
+{
+    .hud
+    {
+        font-size: 8px;
+        letter-spacing: 1px;
+        padding: 16px;
+    }
+}
